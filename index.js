@@ -87,4 +87,9 @@ function placeOrder(cardNumber) {
   if (Number.isInteger(cardNumber) === false) {
     return "Sorry, we don't have a credit card on file for you."
   }
+
+  var x = total();
+  return `Your total cost is $${x}, which will be charged to the card ${cardNumber}.`;
+
+  cart = [];
 }
